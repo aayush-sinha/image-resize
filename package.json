@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest || true --detectOpenHandles"
   },
   "author": "",
   "license": "ISC",
@@ -17,5 +17,9 @@
     "jsonwebtoken": "^8.5.1",
     "request": "^2.88.2",
     "sharp": "^0.25.3"
+  },
+  "devDependencies": {
+    "jest": "^26.0.1",
+    "supertest": "^4.0.2"
   }
 }

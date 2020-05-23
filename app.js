@@ -16,13 +16,13 @@ var download = function (uri, filename, callback) {
     });
 };
 
-app.get('/api', (req, res) => {
+app.get('/', (req, res) => {
     res.json({
         message: 'Welcome to the API'
     });
 });
 
-app.post('/api/post', verifyToken, (req, res) => {
+app.post('/api/create', verifyToken, (req, res) => {
     jwt.verify(req.token, 'secretkey', (err, authData) => {
         if (err) {
             res.sendStatus(403);
@@ -80,5 +80,6 @@ function verifyToken(req, res, next) {
         res.sendStatus(403);
     }
 }
+module.exports = app;
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Listening on ${PORT}`));
