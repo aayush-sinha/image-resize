@@ -79,7 +79,7 @@ Response
 
 ### /api/create
 The /api/create endpoint authorizes user with the signed JSON web token passed as Authorization key in the header as {Bearer <access_token>} also requests body should contain a JSON object that describes the image, e.g.
-![alt text](images/Screenshot 2020-05-24 at 16.12.22)
+![alt text](image/Screenshot 2020-05-24 at 16.12.22)
 
 
 > {
