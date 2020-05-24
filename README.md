@@ -87,11 +87,10 @@ The /api/create endpoint authorizes user with the signed JSON web token passed a
 > "image" : "https://picsum.photos/id/1014/367/267"
 > }
 ```sh
-cURL
-curl --location --request POST 'https://create-thumbnail.herokuapp.com/api/login' \
+curl --location --request POST 'https://create-thumbnail.herokuapp.com/api/create' \
+--header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJuYW1lIjoibmlzaHUiLCJwYXNzd29yZCI6IjEyMzQifSwiaWF0IjoxNTkwMjE1ODA5fQ.rln17x-XeN5WIEteoN_bQsBI40lvK0OB3Cwn56pELCM' \
 --header 'Content-Type: application/json' \
 --data-raw '{
-	"username":"example",
-	"password":"password"
+		"image": "https://picsum.photos/id/1004/367/267"
 }'
 ```
