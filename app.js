@@ -5,6 +5,13 @@ const request = require('request')
 const sharp = require('sharp')
 const app = express()
 app.use(express.json())
+
+/**
+ * @file Create thumbnail API
+ * @author Aayush Sinha
+ * @see <a href="https://github.com/aayush-sinha/image-resize">Github</a>
+ */
+
 /**
  * Download input image
  * @param {string} uri uri - incomming image url
