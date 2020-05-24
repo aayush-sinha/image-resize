@@ -22,7 +22,7 @@ app.get('/', (req, res) => {
     });
 });
 
-app.post('/api/create', verifyToken, (req, res) => {
+app.post('/api/post', verifyToken, (req, res) => {
     jwt.verify(req.token, 'secretkey', (err, authData) => {
         if (err) {
             res.sendStatus(403);
@@ -59,7 +59,7 @@ app.post('/api/login', (req, res) => {
 });
 
 //FORMAT OF TOKEN
-//Autjorization: Bearer <access_token>
+//Authorization: Bearer <access_token>
 
 //VerifyToken
 function verifyToken(req, res, next) {
