@@ -6,7 +6,7 @@ API endpoints are also hosted and running on heroku for demo purpose.
   ### Other Resources
 Consider checking these resources to get better insight on the working of the API
 
- Swagger    [plugins/dropbox/README.md][PlDb] 
+ Swagger    https://app.swaggerhub.com/apis-docs/aayush-sinha/Image-Resizer/1.0.0 
  JSDoc   [plugins/github/README.md][PlGh] 
 ### Modules / Libraries Used 
 
